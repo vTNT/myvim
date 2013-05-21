@@ -102,6 +102,7 @@ endf
 " code template
 autocmd BufNewFile *.py 0r ~/.vim/mode/mode.py
 autocmd BufNewFile *.php 0r ~/.vim/mode/mode.php
+autocmd BufNewFile *.sh 0r ~/.vim/mode/mode.sh
 
 " MiniBufExplorer     多个文件切换 可使用鼠标双击相应文件名进行切换
 let g:miniBufExplMapWindowNavVim=1
