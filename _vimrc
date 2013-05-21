@@ -12,6 +12,13 @@ Bundle 'gmarik/vundle'
 " original repos on github
 Bundle 'kevinw/pyflakes-vim'
 Bundle 'vim-scripts/grep.vim'
+Bundle 'vim-scripts/taglist.vim'
+Bundle 'sorah/puppet.vim'
+Bundle 'vim-scripts/minibufexplorerpp'
+Bundle 'vim-scripts/AuthorInfo'
+Bundle 'vim-scripts/Pydiction'
+Bundle 'vim-scripts/winmanager'
+
 " non github repos
 "Bundle 'git://git.wincent.com/command-t.git'
 " ...
