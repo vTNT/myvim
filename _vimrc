@@ -18,6 +18,7 @@ Bundle 'vim-scripts/minibufexplorerpp'
 Bundle 'vim-scripts/AuthorInfo'
 Bundle 'vim-scripts/Pydiction'
 Bundle 'vim-scripts/winmanager'
+Bundle 'jiangmiao/auto-pairs'
 
 " non github repos
 "Bundle 'git://git.wincent.com/command-t.git'
@@ -76,28 +77,6 @@ filetype plugin indent on
 "colorscheme evening
 colorscheme desert
 set completeopt=longest,menu
-
-" ======= 引号 && 括号自动匹配 ======= "
-:inoremap ( ()<ESC>i
-:inoremap ) <c-r>=ClosePair(')')<CR>
-:inoremap { {}<ESC>i
-:inoremap } <c-r>=ClosePair('}')<CR>
-:inoremap [ []<ESC>i
-:inoremap ] <c-r>=ClosePair(']')<CR>
-:inoremap < <><ESC>i
-:inoremap > <c-r>=ClosePair('>')<CR>
-:inoremap " ""<ESC>i
-:inoremap ' ''<ESC>i
-:inoremap ` ``<ESC>i
-
-function ClosePair(char) 
-    if getline('.')[col('.') - 1] == a:char
-        return "\<Right>"
-    else
-        return a:char
-    endif
-endf
-
 
 " code template
 autocmd BufNewFile *.py 0r ~/.vim/mode/mode.py
