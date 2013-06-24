@@ -17,8 +17,8 @@ Bundle 'sorah/puppet.vim'
 Bundle 'vim-scripts/minibufexplorerpp'
 Bundle 'vim-scripts/AuthorInfo'
 Bundle 'vim-scripts/Pydiction'
-Bundle 'vim-scripts/winmanager'
 Bundle 'jiangmiao/auto-pairs'
+Bundle 'scrooloose/nerdtree'
 
 " non github repos
 "Bundle 'git://git.wincent.com/command-t.git'
@@ -119,12 +119,11 @@ autocmd FileType python setlocal et | setlocal sta | setlocal sw=4
 "快速浏览和操作Buffer -- 插件: MiniBufExplorer
 let g:miniBufExplMapWindowNavVim = 1
 
-"winManager  文件浏览
-let g:winManagerWidth = 30 "设置WinManager宽度, 默认25
- "let g:winManagerWindowLayout='FileExplorer|TagList'
-"let g:winManagerWindowLayout='FileExplorer|TagList'
-let g:winManagerWindowLayout='FileExplorer|BufExplorer'
-nmap <silent> <F8> :WMToggle<cr>
-"    "进入vim 自动打开 WinManager
-let g:AutoOpenWinManager = 1
-
+" ##### nerdtree.vim #####
+" nnoremap <Leader>fl :NERDTreeToggle<CR>
+" nnoremap <Leader>nt :NERDTreeToggle<CR>
+nnoremap <silent> <F5> :NERDTree<CR>
+let NERDTreeWinSize = 25
+let NERDTreeWinPos = "right"
+let NERDChristmasTree=1
+let NERDTreeShowHidden=1 
