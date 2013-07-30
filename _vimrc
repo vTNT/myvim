@@ -19,6 +19,7 @@ Bundle 'vim-scripts/AuthorInfo'
 Bundle 'vim-scripts/Pydiction'
 Bundle 'jiangmiao/auto-pairs'
 Bundle 'scrooloose/nerdtree'
+Bundle 'Glench/Vim-Jinja2-Syntax'
 
 " non github repos
 "Bundle 'git://git.wincent.com/command-t.git'
@@ -163,3 +164,6 @@ function TitleDet()
     endwhile
     call AddTitle()
 endfunction
+
+"jinja2
+au BufNewFile,BufRead *.html,*.htm,*.shtml,*.stm set ft=jinja
